@@ -1,0 +1,7 @@
+Tailwindcss install process cmd 
+
+npm init -y
+
+npm i -d tailwindcss
+
+npx tailwindcss init

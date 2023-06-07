@@ -1,0 +1,17 @@
+{
+  "name": "project-1",
+  "version": "1.0.0",
+  "main": "./tailwind.config.js",
+  "scripts": {
+    "build": "tailwind -i ./src/tailwind.css -o ./output/styletailwind.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "d": "^1.0.1",
+    "tailwindcss": "^3.3.2"
+  },
+  "description": ""
+}
