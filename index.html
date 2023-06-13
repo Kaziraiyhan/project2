@@ -4,28 +4,498 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./output/style_tailwind.css" />
+    <link rel="stylesheet" href="./src/css/slick.css" />
+    <!-- slick Slaider  -->
+    <link rel="stylesheet" href="./src/css/venobox.css">
+    <!-- veno box -->
+    <link rel="stylesheet" href="./output/style.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>Document</title>
   </head>
-  <body class="h-screen">
-    <div
-      class="h-screen bg-gray-400 rounded-xl shadow-md flex justify-center items-center"
-    >
-      <div
-        class="text-center bg-gray-100 max-w-max p-8 rounded-xl flex justify-center items-center flex-col"
-      >
-        <div class="max-w-sm w-full">
-          <img
-            class="mx-auto"
-            src="https://i.postimg.cc/66CqLyB5/my-pic.jpg"
-            alt=""
-          />
-        </div>
-        <div class="">
-          <h2 class="pt-6">Kazi Raihan</h2>
-          <h3 class="">Kazi Mohammad Raihan</h3>
+  <body>
+    <header class="absolute w-full z-20">
+      <div class="container mx-auto bg-zinc-800">
+        <div class="header_wraper px-10 py-6 flex justify-between">
+          <div class="location flex items-center gap-5">
+            <div class="location_icon">
+              <img src="./images/home/location_img.png" alt="location_icon" />
+            </div>
+            <div class="location_address">
+              <h4 class="text-xs text-gray-400">14/A, New Castle Hall</h4>
+              <a class="text-2xl text-white font-bold" href="#">New York, US</a>
+            </div>
+          </div>
+          <div class="name text-end">
+            <span class="text-xs block text-gray-400">Solution</span>
+            <span class="font-bold text-3xl text-white">Sultivo.</span>
+          </div>
+          <div class="number flex items-center gap-4">
+            <div class="img">
+              <img src="./images/home/call_icon.png" alt="img" />
+            </div>
+            <div class="num_ditels">
+              <h4 class="text-xs text-gray-400">Phone Number</h4>
+              <a class="text-2xl font-bold text-white" href="#"
+                >+8801303069224</a
+              >
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
+      <div class="container mx-auto">
+        <nav class="bg-white flex justify-between">
+          <ul class="flex space-x-4 py-4">
+            <li>
+              <a
+                href="#"
+                class="text-gray-500 font-medium hover:text-gray-950 px-3 py-2 transition duration-500 capitalize"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-500 font-medium hover:text-gray-950 px-3 py-2 transition ease-in duration-500 capitalize"
+                >about us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-500 font-medium hover:text-gray-950 px-3 py-2 transition ease-in duration-500 capitalize"
+                >pages</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-500 font-medium hover:text-gray-950 px-3 py-2 transition ease-in duration-500 capitalize"
+                >news</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="text-gray-500 font-medium hover:text-gray-950 px-3 py-2 transition ease-in duration-500 capitalize"
+                >conttact us</a
+              >
+            </li>
+          </ul>
+          <div class="search flex items-center">
+            <div class="search_btn flex justify-center">
+              <span class="py-2 block">
+                <i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+              <span class="py-2 block"
+                ><input
+                  class="outline-none ps-3"
+                  type="text"
+                  placeholder="Search heare"
+              /></span>
+            </div>
+            <div class="user flex h-full items-center">
+              <span class="px-4 block"><i class="fa-solid fa-user"></i></span>
+              <span class="block"><i class="fa-solid fa-bars"></i></span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+<!-- ======================================    banner start   ===========================-->
+
+    <section id="banner" class="bg-gray-700">
+      <div class="banner_text">
+        <div class="slaider">
+          <div>
+            <div class="slider_1 pt-[395px] pb-[230px]">
+              <h6 class="uppercase text-center text-sm text-white">
+                welcome to our it company
+              </h6>
+              <h1
+                class="capitalize text-center text-[100px] font-bold text-white px-[450px] leading-3]"
+              >
+                IT consult service for business.
+              </h1>
+              <div class="btn_wraper flex gap-6 justify-center">
+                >
+                <a
+                  class="p-5 bg-orange-600 capitalize transition-all duration-500 border-orange-600 hover:bg-transparent hover:border hover:border-gray-400 text-white"
+                  href=""
+                  >Get Apointment</a
+                >
+                <a
+                  class="p-5 bg-orange-600 capitalize transition-all duration-500 border-orange-600 hover:bg-transparent hover:border hover:border-gray-400 text-white"
+                  href=""
+                  >learn more</a
+                >
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="slider_1 pt-[395px] pb-[230px]">
+              <h6 class="uppercase text-center text-sm text-white">
+                welcome to our it 2nd company
+              </h6>
+              <h1
+                class="capitalize text-center text-[100px] font-bold text-white px-[450px] leading-3]"
+              >
+                IT consult service for business.
+              </h1>
+              <div class="btn_wraper flex gap-6 justify-center">
+                >
+                <a
+                  class="p-5 bg-orange-600 capitalize transition-all duration-500 border-orange-600 hover:bg-transparent hover:border hover:border-gray-400 text-white"
+                  href=""
+                  >Get Apointment</a
+                >
+                <a
+                  class="p-5 bg-orange-600 capitalize transition-all duration-500 border-orange-600 hover:bg-transparent hover:border hover:border-gray-400 text-white"
+                  href=""
+                  >learn more</a
+                >
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+<!-- ======================================    banner end   ===========================-->
+
+
+    <!--  ====================================== <</  about us =============================== -->
+
+    <section id="about_us" class="py-32">
+      <div class="container mx-auto">
+        <div class="about_top_wraper flex gap-[200px]">
+          <div class="about_img">
+            <div class="relative img_fram w-[410px] h-[510px] bg-gray-950">
+              <div
+                class="shadow-lg shadow-gray-500/50 flex gap-4 justify-center items-center name h-[120px] w-[300px] bg-white absolute right-0 translate-x-[50%] top-0 z-20"
+              >
+                <div
+                  class="overflow-hidden h[70px] w-[70px] rounded-full bg-black"
+                >
+                  <img
+                    class="object-cover h-full w-full"
+                    src="./images/home/call_icon.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h4 class="text-slate-800 font-bold text-xl">Rosalina D.</h4>
+                  <h5 class="uppercase text-orange-600 font-bold text-xs">
+                    founder
+                  </h5>
+                </div>
+              </div>
+              <img
+                class="top-10 left-10 absolute"
+                src="./images/home/about_us-1st.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="about_detils relative w-[521px]">
+            <h6
+              class="ml-[100px] uppercase font-bold text-orange-600 after:absolute after:w-[70px] after:h-[2px] after:contint-[''] after:left-0 after:bg-gray-300 after:top-[11px]"
+            >
+              about us
+            </h6>
+            <h2 class="text-neutral-800 text-6xl font-bold capitalize mt-5">
+              we belive in our working progress
+            </h2>
+            <p class="text-[18px] font-normal text-neutral-700 mt-9">
+              A consultancy is a company that gives expert advice on a
+              particular subject. Consultancy is expert advice on a particular
+              subject which a person or group is paid to provider.
+            </p>
+            <div class="mt-10">
+              <span
+                class="capitalize text-neutral-600 hover:text-neutral-900 transition-all duration-300 font-bold"
+                >our missions</span
+              >
+              <span
+                class="capitalize text-neutral-600 hover:text-neutral-900 transition-all duration-300 font-bold ml-8"
+                >our visions</span
+              >
+            </div>
+            <p class="text-[18px] font-normal text-neutral-700 mt-5">
+              A consultancy is a company that gives expert advice on a
+              particular subject. Consultancy is expert advice.
+            </p>
+            <a
+              class="py-5 px-7 block max-w-fit mt-8 bg-orange-600 capitalize transition-all duration-500 border-orange-600 hover:bg-transparent hover:border hover:border-gray-400 text-white"
+              href=""
+              >learn more</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="company_link h-[350px] w-full  bg-neutral-300">
+
+
+        <div class="container mx-auto relative mt-[950px]">
+
+
+          <!--  -->
+          <div id="item_wraper" class="container mx-auto mt-32 absolute bottom-0 left-0">
+            <div  class="item_wraper flex flex-wrap">
+              <div
+                class="item w-1/2 bg-orange-600 flex justify-center items-center gap-8 p-[70px]"
+              >
+                <div class="w-14 h-14">
+                  <img
+                    class="object-cover max-w-fit"
+                    src="./images/home/about_us_item_icon.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3 class="text-[80px] text-white font-bold">01</h3>
+                  <h4 class="capitalize text-white font-bold text-2xl">
+                    business consultancy
+                  </h4>
+                  <p class="text-white text-sm w-">
+                    He is acting on a consultancy consultancy and training. A
+                    consultancy is a company that gives expert advice on a
+                    particular subject.
+                  </p>
+                  <a
+                    class="inline-block capitalize text-orange-400 underline mt-5"
+                    href="#"
+                    >Reade more</a
+                  >
+                </div>
+              </div>
+          
+              <div
+                class="item w-1/2 bg-white flex justify-center items-center gap-8 p-[70px]"
+              >
+                <div class="w-14 h-14">
+                  <img
+                    class="object-cover max-w-fit"
+                    src="./images/home/about_us_item_icon2.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3 class="text-[80px] text-orange-600 font-bold">02</h3>
+                  <h4 class="capitalize text-neutral-700 font-bold text-2xl">
+                    business consultancy
+                  </h4>
+                  <p class="text-neutral-600 text-sm w-">
+                    He is acting on a consultancy consultancy and training. A
+                    consultancy is a company that gives expert advice on a
+                    particular subject.
+                  </p>
+                  <a
+                    class="inline-block capitalize text-neutral-400 underline mt-5"
+                    href="#"
+                    >Reade more</a
+                  >
+                </div>
+              </div>
+              <div
+                class="item w-1/2 bg-white flex justify-center items-center gap-8 p-[70px]"
+              >
+                <div class="w-14 h-14">
+                  <img
+                    class="object-cover max-w-fit"
+                    src="./images/home/about_us_item_icon2.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3 class="text-[80px] text-orange-600 font-bold">03</h3>
+                  <h4 class="capitalize text-neutral-700 font-bold text-2xl">
+                    business consultancy
+                  </h4>
+                  <p class="text-neutral-600 text-sm w-">
+                    He is acting on a consultancy consultancy and training. A
+                    consultancy is a company that gives expert advice on a
+                    particular subject.
+                  </p>
+                  <a
+                    class="inline-block capitalize text-neutral-400 underline mt-5"
+                    href="#"
+                    >Reade more</a
+                  >
+                </div>
+              </div>
+              <div
+                class="item w-1/2 bg-neutral-800 flex justify-center items-center gap-8 p-[70px]"
+              >
+                <div class="w-14 h-14">
+                  <img
+                    class="object-cover max-w-fit"
+                    src="./images/home/about_us_item_icon.png"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <h3 class="text-[80px] text-white font-bold">04</h3>
+                  <h4 class="capitalize text-white font-bold text-2xl">
+                    business consultancy
+                  </h4>
+                  <p class="text-white text-sm w-">
+                    He is acting on a consultancy consultancy and training. A
+                    consultancy is a company that gives expert advice on a
+                    particular subject.
+                  </p>
+                  <a
+                    class="inline-block capitalize text-neutral-400 underline mt-5"
+                    href="#"
+                    >Reade more</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+   <!--  -->
+
+
+          <div class="flex justify-around items-center h-[350px]">
+  
+              <a href="#">
+                <img src="./images/home/coumpany_links_01.png" alt="img" />
+
+              </a>
+  
+              <a href="#">
+                <img src="./images/home/coumpany_links_02.png" alt="img" />
+
+              </a>
+  
+              <a href="#">
+                <img src="./images/home/coumpany_links_03.png" alt="img" />
+
+              </a>
+  
+              <a href="#">
+                <img src="./images/home/coumpany_links_04.png" alt="img" />
+
+              </a>
+  
+              <a href="#">
+                <img src="./images/home/coumpany_links_05.png" alt="img" />
+
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  ======================================   about us />>=============================== -->
+    <section id="home_work" class="pt-28 pb-52 bg-neutral-800">
+
+      <div class="container mx-auto ">
+
+        <div class="work_wraper relative flex gap-28">
+
+          <div class="work_detils w-[530px]">
+            <h6
+            class="ml-[100px] uppercase font-bold text-orange-600 after:absolute after:w-[70px] after:h-[2px] after:contint-[''] after:left-0 after:bg-orange-600 after:top-[11px]"
+          >
+            intro video
+          </h6>
+          <h2 class="text-neutral-50 text-6xl font-bold capitalize mt-5">
+            we belive in our working progress
+          </h2>
+          <p class="text-[18px] font-normal text-neutral-400 mt-9">
+            A consultancy is a company that gives expert advice on a
+            particular subject. Consultancy is expert advice on a particular
+            subject which a person or group is paid to provider.
+          </p>
+          <div class="facilities flex flex-col gap-3 my-6">
+            <span class="text-white flex items-center gap-4"> <i class="fa-solid fa-circle-check text-orange-600 overflow-hidden rounded-full text-2xl "></i> <p class="capitalize">Made with passionate designer</p> </span>
+            <span class="text-white flex items-center gap-4"> <i class="fa-solid fa-circle-check text-orange-600 overflow-hidden rounded-full text-2xl "></i> <p class="capitalize">built with amazing feature</p> </span>
+            <span class="text-white flex items-center gap-4"> <i class="fa-solid fa-circle-check text-orange-600 overflow-hidden rounded-full text-2xl "></i> <p class="capitalize">24/7 online support</p> </span>
+
+          </div>
+          </div>
+          <div class="work_video w-[570px] h-[460px] overflow-hidden relative">
+            <img class="object-cover w-full " src="./images/home/video_thamel.jpg" alt="img">
+
+            <a class="absolute z-30  p-3 h-12 w-12 text-center rounded-full bg-red-600 text-white  my-video-links" data-autoplay="true" data-vbtype="video" href="https://youtu.be/RBz3vP6aD5w">
+              <i class="fa-solid fa-play"></i>
+            </a>
+
+          </div>
+
+        </div>
+        <div class="container mt-32">
+          <div class="relative">
+            <h6
+            class="ml-[100px] uppercase font-bold text-orange-600 after:absolute after:w-[70px] after:h-[2px] after:contint-[''] after:left-0 after:bg-orange-600 after:top-[11px]"
+          >
+            case stady
+          </h6>
+          <h2 class="text-neutral-50 text-6xl font-bold capitalize mt-5">
+            we have done
+          </h2>
+          </div>
+
+          <div class="slaider_2 bg-slate-300 mt-9 ">
+
+            <div class="ms-7">
+              <div class="item w-[600px] h-[420px] relative bg-green-400">
+                <a class="absolute z-30  p-3 h-12 w-12 text-center rounded-full bg-red-600 text-white  my-video-links" data-autoplay="true" data-vbtype="video" href="https://youtu.be/RBz3vP6aD5w">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="ms-5">
+              <div class="item w-[600px] h-[420px] relative bg-blue-400">
+                <a class="absolute z-30  p-3 h-12 w-12 text-center rounded-full bg-red-600 text-white  my-video-links" data-autoplay="true" data-vbtype="video" href="https://youtu.be/RBz3vP6aD5w">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div >
+              <div class="item w-[600px] h-[420px] relative bg-cyan-400">
+                <a class="absolute z-30  p-3 h-12 w-12 text-center rounded-full bg-red-600 text-white  my-video-links" data-autoplay="true" data-vbtype="video" href="https://youtu.be/RBz3vP6aD5w">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+            </div>
+
+            <div >
+              <div class="item w-[600px] h-[420px] relative bg-red-400">
+                <a class="absolute z-30  p-3 h-12 w-12 text-center rounded-full bg-red-600 text-white  my-video-links" data-autoplay="true" data-vbtype="video" href="https://youtu.be/RBz3vP6aD5w">
+                  <i class="fa-solid fa-play"></i>
+                </a>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+
+     
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <script
+      src="https://kit.fontawesome.com/62d2d1d427.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/js/jquery-1.12.4.min.js"></script>
+    <script src="./src/js/slick.js"></script>
+    <script src="./src/js/venobox.js"></script>
+    <script src="./src/js/script.js"></script>
   </body>
 </html>

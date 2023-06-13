@@ -5,3 +5,12 @@ npm init -y
 npm i -d tailwindcss
 
 npx tailwindcss init
+
+npm run build
+
+to get difult css settings
+npx tailwindCss init -- full
+
+
+
+ "build" : "tailwind -i ./src/tailwind.css -o ./output/style_tailwind.css -w"
