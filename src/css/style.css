@@ -87,4 +87,10 @@ h1 {
   width: calc(100% + 183px);
  
 }
-
+.vbox-content{
+  top: -50%;
+left: -30%;
+  width: 80%;
+transform: translate(50% , 50%);
+padding: 0;
+}
